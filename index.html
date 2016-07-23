@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <script>
+        console.log('before aurelia')
+    </script>
+    <script src="./dist/aurelia-index.js"></script>
+    <script>
+        console.log('after aurelia, before babel')
+    </script>
+    <script src="./dist/babel-index.js"></script>
+    <script>
+        console.log('after babel')
+    </script>
+</body>
+</html>
