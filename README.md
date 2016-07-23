@@ -22,7 +22,7 @@ I haven't pin pointed exactly where the bug is or which repo is responsible, but
 * `aurelia-polyfills` `Collection` appears to assume the constructor is `Collection` and if it is not it tries to correct it ([src](https://github.com/aurelia/polyfills/blob/master/dist/commonjs/aurelia-polyfills.js#L605)) (but sometimes it is `Map` from `babel-polyfill`) [src](https://github.com/zloirock/core-js/blob/master/modules/es6.map.js#L5). 
 
 ## Next Steps  
-- [ ] see if anyone on aurelia-polyfills has seen this / has ideas
+- [ ] see if anyone on aurelia-polyfills has seen this / has ideas (https://github.com/aurelia/polyfills/issues/31)
 - [ ] see if anyone on babel-polyfill has seen this / has ideas
 - [ ] see if I can isolate it to the `Map` polyfill on the babel side that is conflicting with the aurelia side
 - [ ] see if aurelia is polyfilling `Map` (I assume it is) and why babel is also trying to polyfill it
